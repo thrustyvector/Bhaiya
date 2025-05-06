@@ -1,15 +1,15 @@
-// import express from "express"
-// import dotenv from "dotenv"
-// import cookieParser from "cookie-parser"
-// import cors from "cors"
+import express from "express"
+import dotenv from "dotenv"
+import { connectDb } from "./src/lib/db.js"
 
-// dotenv.config()
-// const app = express()
-// const PORT = process.env.PORT
-// app.use(express.json())
-// app.use(cookieParser())
-// app.use(cors())
+dotenv.config()
+const app = express()
+const PORT = process.env.PORT
+app.use(express.json())
 
-// app.listen(PORT,()=>{
-//     connectDb()
-// })
+
+
+app.listen(PORT,()=>{
+    console.log("Server Runnin at ", PORT)
+    connectDb()
+})
