@@ -10,4 +10,4 @@ export const signup = catchAsync(async (req, res, next) => {
     role: req.body.role,
   });
   res.status(201).json({ status: "success", data: { user } });
-});
+}); 
