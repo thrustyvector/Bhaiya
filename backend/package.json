@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "seed":"node src/seeds/order.seed.js"
+    "seed": "node src/seeds/order.seed.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "type": "module",
@@ -15,5 +16,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.16.0",
     "mongoose": "^8.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
